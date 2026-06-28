@@ -1,0 +1,100 @@
+OpenMindAIHub/
+├── README.md
+├── build.gradle.kts
+├── settings.gradle.kts
+├── gradle.properties
+├── gradle/
+│   └── libs.versions.toml
+├── app/
+│   ├── build.gradle.kts
+│   ├── proguard-rules.pro
+│   └── src/main/
+│       ├── AndroidManifest.xml
+│       ├── res/
+│       │   ├── drawable/
+│       │   │   ├── ic_launcher_foreground.xml
+│       │   │   └── ic_launcher_monochrome.xml
+│       │   ├── mipmap-anydpi-v26/
+│       │   │   ├── ic_launcher.xml
+│       │   │   └── ic_launcher_round.xml
+│       │   ├── values/
+│       │   │   ├── strings.xml
+│       │   │   ├── colors.xml
+│       │   │   ├── themes.xml
+│       │   │   └── dimens.xml
+│       │   └── xml/
+│       │       ├── network_security_config.xml
+│       │       ├── backup_rules.xml
+│       │       └── data_extraction_rules.xml
+│       └── java/com/openmind/
+│           ├── OpenMindApplication.kt
+│           ├── data/
+│           │   ├── model/
+│           │   │   ├── AIResponse.kt
+│           │   │   ├── Conversation.kt
+│           │   │   ├── Message.kt
+│           │   │   ├── ModelInfo.kt
+│           │   │   ├── ProviderConfig.kt
+│           │   │   └── UserPreferences.kt
+│           │   ├── db/
+│           │   │   ├── OpenMindDatabase.kt
+│           │   │   ├── ConversationEntity.kt
+│           │   │   ├── MessageEntity.kt
+│           │   │   ├── ProviderConfigEntity.kt
+│           │   │   ├── ConversationDao.kt
+│           │   │   ├── MessageDao.kt
+│           │   │   ├── ProviderConfigDao.kt
+│           │   │   └── Converters.kt
+│           │   ├── provider/
+│           │   │   ├── AIProvider.kt
+│           │   │   ├── ProviderManager.kt
+│           │   │   ├── GenericHttpProvider.kt
+│           │   │   ├── OllamaProvider.kt
+│           │   │   └── OpenAIMockProvider.kt
+│           │   ├── repository/
+│           │   │   ├── ChatRepository.kt
+│           │   │   ├── ProviderRepository.kt
+│           │   │   └── PreferencesRepository.kt
+│           │   ├── security/
+│           │   │   └── SecureKeyStore.kt
+│           │   ├── voice/
+│           │   │   └── VoiceInputManager.kt
+│           │   ├── search/
+│           │   │   └── SearchEngine.kt
+│           │   ├── backup/
+│           │   │   └── OpenMindBackupAgent.kt
+│           │   └── util/
+│           │       ├── FlowUtils.kt
+│           │       ├── DateTimeUtils.kt
+│           │       ├── TokenUtils.kt
+│           │       ├── MarkdownUtils.kt
+│           │       ├── ExportUtils.kt
+│           │       └── NetworkUtils.kt
+│           ├── di/
+│           │   ├── NetworkModule.kt
+│           │   ├── DatabaseModule.kt
+│           │   ├── ProviderModule.kt
+│           │   └── SecurityModule.kt
+│           └── ui/
+│               ├── MainActivity.kt
+│               ├── theme/
+│               │   ├── Theme.kt
+│               │   └── Typography.kt
+│               ├── navigation/
+│               │   └── OpenMindNavigation.kt
+│               ├── components/
+│               │   └── SharedComponents.kt
+│               ├── chat/
+│               │   ├── ChatScreen.kt
+│               │   ├── ChatItemComposable.kt
+│               │   ├── ChatViewModel.kt
+│               │   └── ChatUiState.kt
+│               ├── conversations/
+│               │   ├── ConversationsScreen.kt
+│               │   └── ConversationsViewModel.kt
+│               ├── providers/
+│               │   ├── ProvidersScreen.kt
+│               │   └── ProvidersViewModel.kt
+│               └── settings/
+│                   ├── SettingsScreen.kt
+│                   └── SettingsViewModel.kt
